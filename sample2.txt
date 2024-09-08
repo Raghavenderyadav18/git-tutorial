@@ -1,1 +1,2 @@
-sample 2 is added
+sample 2 is added 
+changes by dieheart coder
