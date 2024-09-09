@@ -1,0 +1,1216 @@
+!SESSION 2024-09-09 12:03:13.696 -----------------------------------------------
+eclipse.buildId=4.18.0.I20201202-1800
+java.version=15.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.datatools.enablement.ingres.ui 4 0 2024-09-09 12:03:14.969
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.ingres.ui [169]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.sqltools.plan [234]
+         Unresolved requirement: Require-Bundle: org.eclipse.draw2d
+           -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+              org.eclipse.draw2d [1029]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.sqltools.editor.core.ui [229]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.sqleditor
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.sqleditor; bundle-version="1.2.201.202009292210"; singleton:="true"
+       org.eclipse.datatools.sqltools.sqleditor [245]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.routineeditor.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.routineeditor.ui; bundle-version="1.2.101.202008192017"; singleton:="true"
+       org.eclipse.datatools.sqltools.routineeditor.ui [238]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.sqleditor
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.sqleditor; bundle-version="1.2.201.202009292210"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.sybase.asa.schemaobjecteditor.examples 4 0 2024-09-09 12:03:14.973
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.sybase.asa.schemaobjecteditor.examples [197]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.debugger.core
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.debugger.core; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.sqltools.debugger.core [224]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.sqleditor
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.sqleditor; bundle-version="1.2.201.202009292210"; singleton:="true"
+              org.eclipse.datatools.sqltools.sqleditor [245]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+                  -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+                     org.eclipse.datatools.sqltools.editor.core.ui [229]
+                       Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+                         -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+                            org.eclipse.datatools.sqltools.plan [234]
+                              Unresolved requirement: Require-Bundle: org.eclipse.draw2d
+                                -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+                                   org.eclipse.draw2d [1029]
+                                     Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+                  -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.routineeditor.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.routineeditor.ui; bundle-version="1.2.101.202008192017"; singleton:="true"
+       org.eclipse.datatools.sqltools.routineeditor.ui [238]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.sqleditor
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.sqleditor; bundle-version="1.2.201.202009292210"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.schemaobjecteditor.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.schemaobjecteditor.ui; bundle-version="1.3.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.sqltools.schemaobjecteditor.ui [240]
+         Unresolved requirement: Require-Bundle: org.eclipse.draw2d
+           -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.debugger.core.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.debugger.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.sqltools.debugger.core.ui [225]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.debugger.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.debugger.core; bundle-version="1.2.101.201811012051"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.routineeditor.ui
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.routineeditor.ui; bundle-version="1.2.101.202008192017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.sqleditor
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.sqleditor; bundle-version="1.2.201.202009292210"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.sqleditor
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.sqleditor; bundle-version="1.2.201.202009292210"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.sqlscrapbook
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.sqlscrapbook; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.sqltools.sqlscrapbook [246]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.sqleditor
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.sqleditor; bundle-version="1.2.201.202009292210"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.schemaobjecteditor.ui.pages
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.schemaobjecteditor.ui.pages; bundle-version="1.3.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.sqltools.schemaobjecteditor.ui.pages [241]
+         Unresolved requirement: Require-Bundle: org.eclipse.draw2d
+           -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.sybase.asa.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.enablement.sybase.asa.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.enablement.sybase.asa.ui [198]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.ddlgen.ui
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.ddlgen.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.sqltools.ddlgen.ui [223]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.sqleditor
+                  -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.sqleditor; bundle-version="1.2.201.202009292210"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.sybase.asa.ui 4 0 2024-09-09 12:03:14.976
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.sybase.asa.ui [198]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.ddlgen.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.ddlgen.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.sqltools.ddlgen.ui [223]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.sqleditor
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.sqleditor; bundle-version="1.2.201.202009292210"; singleton:="true"
+              org.eclipse.datatools.sqltools.sqleditor [245]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+                  -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+                     org.eclipse.datatools.sqltools.editor.core.ui [229]
+                       Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+                         -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+                            org.eclipse.datatools.sqltools.plan [234]
+                              Unresolved requirement: Require-Bundle: org.eclipse.draw2d
+                                -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+                                   org.eclipse.draw2d [1029]
+                                     Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+                  -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.sybase.ase.ui 4 0 2024-09-09 12:03:14.978
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.sybase.ase.ui [202]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.ddlgen.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.ddlgen.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.sqltools.ddlgen.ui [223]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.sqleditor
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.sqleditor; bundle-version="1.2.201.202009292210"; singleton:="true"
+              org.eclipse.datatools.sqltools.sqleditor [245]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+                  -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+                     org.eclipse.datatools.sqltools.editor.core.ui [229]
+                       Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+                         -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+                            org.eclipse.datatools.sqltools.plan [234]
+                              Unresolved requirement: Require-Bundle: org.eclipse.draw2d
+                                -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+                                   org.eclipse.draw2d [1029]
+                                     Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+                  -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.sqltools.db.derby.ui 4 0 2024-09-09 12:03:14.981
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.sqltools.db.derby.ui [220]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.sqltools.editor.core.ui [229]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.sqltools.plan [234]
+                Unresolved requirement: Require-Bundle: org.eclipse.draw2d
+                  -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+                     org.eclipse.draw2d [1029]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.db.generic.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.db.generic.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.sqltools.db.generic.ui [222]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.sqleditor
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.sqleditor; bundle-version="1.2.201.202009292210"; singleton:="true"
+              org.eclipse.datatools.sqltools.sqleditor [245]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+                  -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+                  -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.sqltools.db.generic.ui 4 0 2024-09-09 12:03:14.985
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.sqltools.db.generic.ui [222]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.sqltools.editor.core.ui [229]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.sqltools.plan [234]
+                Unresolved requirement: Require-Bundle: org.eclipse.draw2d
+                  -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+                     org.eclipse.draw2d [1029]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.sqleditor
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.sqleditor; bundle-version="1.2.201.202009292210"; singleton:="true"
+       org.eclipse.datatools.sqltools.sqleditor [245]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.sqltools.ddlgen.ui 4 0 2024-09-09 12:03:14.987
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.sqltools.ddlgen.ui [223]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.sqleditor
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.sqleditor; bundle-version="1.2.201.202009292210"; singleton:="true"
+       org.eclipse.datatools.sqltools.sqleditor [245]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.sqltools.editor.core.ui [229]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+                  -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+                     org.eclipse.datatools.sqltools.plan [234]
+                       Unresolved requirement: Require-Bundle: org.eclipse.draw2d
+                         -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+                            org.eclipse.draw2d [1029]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.sqltools.debugger.core 4 0 2024-09-09 12:03:14.989
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.sqltools.debugger.core [224]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.sqleditor
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.sqleditor; bundle-version="1.2.201.202009292210"; singleton:="true"
+       org.eclipse.datatools.sqltools.sqleditor [245]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.sqltools.editor.core.ui [229]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+                  -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+                     org.eclipse.datatools.sqltools.plan [234]
+                       Unresolved requirement: Require-Bundle: org.eclipse.draw2d
+                         -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+                            org.eclipse.draw2d [1029]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.sqltools.debugger.core.ui 4 0 2024-09-09 12:03:14.991
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.sqltools.debugger.core.ui [225]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.debugger.core
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.debugger.core; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.sqltools.debugger.core [224]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.sqleditor
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.sqleditor; bundle-version="1.2.201.202009292210"; singleton:="true"
+              org.eclipse.datatools.sqltools.sqleditor [245]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+                  -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+                     org.eclipse.datatools.sqltools.editor.core.ui [229]
+                       Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+                         -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+                            org.eclipse.datatools.sqltools.plan [234]
+                              Unresolved requirement: Require-Bundle: org.eclipse.draw2d
+                                -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+                                   org.eclipse.draw2d [1029]
+                                     Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+                  -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.routineeditor.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.routineeditor.ui; bundle-version="1.2.101.202008192017"; singleton:="true"
+       org.eclipse.datatools.sqltools.routineeditor.ui [238]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.sqleditor
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.sqleditor; bundle-version="1.2.201.202009292210"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.sqleditor
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.sqleditor; bundle-version="1.2.201.202009292210"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.sqltools.editor.core.ui 4 0 2024-09-09 12:03:14.993
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.sqltools.editor.core.ui [229]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.sqltools.plan [234]
+         Unresolved requirement: Require-Bundle: org.eclipse.draw2d
+           -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+              org.eclipse.draw2d [1029]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.sqltools.plan 4 0 2024-09-09 12:03:14.995
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.sqltools.plan [234]
+  Unresolved requirement: Require-Bundle: org.eclipse.draw2d
+    -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+       org.eclipse.draw2d [1029]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.sqltools.routineeditor.ui 4 0 2024-09-09 12:03:14.997
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.sqltools.routineeditor.ui [238]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.sqltools.editor.core.ui [229]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.sqltools.plan [234]
+                Unresolved requirement: Require-Bundle: org.eclipse.draw2d
+                  -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+                     org.eclipse.draw2d [1029]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.sqleditor
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.sqleditor; bundle-version="1.2.201.202009292210"; singleton:="true"
+       org.eclipse.datatools.sqltools.sqleditor [245]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.sqltools.schemaobjecteditor.ui 4 0 2024-09-09 12:03:14.999
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.sqltools.schemaobjecteditor.ui [240]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.sqleditor
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.sqleditor; bundle-version="1.2.201.202009292210"; singleton:="true"
+       org.eclipse.datatools.sqltools.sqleditor [245]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.sqltools.editor.core.ui [229]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+                  -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+                     org.eclipse.datatools.sqltools.plan [234]
+                       Unresolved requirement: Require-Bundle: org.eclipse.draw2d
+                         -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+                            org.eclipse.draw2d [1029]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.draw2d
+    -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.sqltools.schemaobjecteditor.ui.pages 4 0 2024-09-09 12:03:15.005
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.sqltools.schemaobjecteditor.ui.pages [241]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.schemaobjecteditor.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.schemaobjecteditor.ui; bundle-version="1.3.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.sqltools.schemaobjecteditor.ui [240]
+         Unresolved requirement: Require-Bundle: org.eclipse.draw2d
+           -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+              org.eclipse.draw2d [1029]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+  Unresolved requirement: Require-Bundle: org.eclipse.draw2d
+    -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.sqleditor
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.sqleditor; bundle-version="1.2.201.202009292210"; singleton:="true"
+       org.eclipse.datatools.sqltools.sqleditor [245]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.sqltools.editor.core.ui [229]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+                  -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+                     org.eclipse.datatools.sqltools.plan [234]
+                       Unresolved requirement: Require-Bundle: org.eclipse.draw2d
+                         -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.sqltools.sqlbuilder 4 0 2024-09-09 12:03:15.012
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.sqltools.sqlbuilder [244]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.sqltools.editor.core.ui [229]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.sqltools.plan [234]
+                Unresolved requirement: Require-Bundle: org.eclipse.draw2d
+                  -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+                     org.eclipse.draw2d [1029]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.sqleditor; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.sqleditor; bundle-version="1.2.201.202009292210"; singleton:="true"
+       org.eclipse.datatools.sqltools.sqleditor [245]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.gef
+    -> Bundle-SymbolicName: org.eclipse.gef; bundle-version="3.16.0.202311222042"; singleton:="true"
+       org.eclipse.gef [1065]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+         Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.13.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.sqltools.sqleditor 4 0 2024-09-09 12:03:15.017
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.sqltools.sqleditor [245]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.sqltools.editor.core.ui [229]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.sqltools.plan [234]
+                Unresolved requirement: Require-Bundle: org.eclipse.draw2d
+                  -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+                     org.eclipse.draw2d [1029]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.sqltools.sqlscrapbook 4 0 2024-09-09 12:03:15.024
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.sqltools.sqlscrapbook [246]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.sqleditor
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.sqleditor; bundle-version="1.2.201.202009292210"; singleton:="true"
+       org.eclipse.datatools.sqltools.sqleditor [245]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.sqltools.editor.core.ui [229]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+                  -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+                     org.eclipse.datatools.sqltools.plan [234]
+                       Unresolved requirement: Require-Bundle: org.eclipse.draw2d
+                         -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+                            org.eclipse.draw2d [1029]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+           -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.plan
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.plan; bundle-version="1.2.101.201811012051"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.sqltools.editor.core.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jpt.common.ui 4 0 2024-09-09 12:03:15.247
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.common.ui [438]
+  Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.4.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+       org.eclipse.draw2d [1029]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jpt.jaxb.eclipselink.ui 4 0 2024-09-09 12:03:15.252
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.jaxb.eclipselink.ui [447]
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.common.ui; bundle-version="[1.0.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jpt.common.ui; bundle-version="1.4.201.v201902121834"; singleton:="true"
+       org.eclipse.jpt.common.ui [438]
+         Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.4.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+              org.eclipse.draw2d [1029]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.jaxb.ui; bundle-version="[1.1.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jpt.jaxb.ui; bundle-version="1.5.200.v202007091849"; singleton:="true"
+       org.eclipse.jpt.jaxb.ui [448]
+         Unresolved requirement: Require-Bundle: org.eclipse.jpt.common.ui; bundle-version="[1.0.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jpt.common.ui; bundle-version="1.4.201.v201902121834"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jpt.jaxb.ui 4 0 2024-09-09 12:03:15.258
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.jaxb.ui [448]
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.common.ui; bundle-version="[1.0.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jpt.common.ui; bundle-version="1.4.201.v201902121834"; singleton:="true"
+       org.eclipse.jpt.common.ui [438]
+         Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.4.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+              org.eclipse.draw2d [1029]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jpt.jpa.eclipselink.ui 4 0 2024-09-09 12:03:15.266
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.jpa.eclipselink.ui [457]
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.ui; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jpt.jpa.ui; bundle-version="3.6.1.v202007091901"; singleton:="true"
+       org.eclipse.jpt.jpa.ui [459]
+         Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.4.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+              org.eclipse.draw2d [1029]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.common.ui; bundle-version="[1.0.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jpt.common.ui; bundle-version="1.4.201.v201902121834"; singleton:="true"
+       org.eclipse.jpt.common.ui [438]
+         Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.4.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jpt.jpa.ui 4 0 2024-09-09 12:03:15.272
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.jpa.ui [459]
+  Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.4.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+       org.eclipse.draw2d [1029]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.common.ui; bundle-version="[1.0.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jpt.common.ui; bundle-version="1.4.201.v201902121834"; singleton:="true"
+       org.eclipse.jpt.common.ui [438]
+         Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.4.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.jsf.apache.trinidad.tagsupport 4 0 2024-09-09 12:03:15.278
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.jsf.apache.trinidad.tagsupport [494]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.common.ui; bundle-version="[1.1.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.jsf.common.ui; bundle-version="1.5.102.v202007170344"; singleton:="true"
+       org.eclipse.jst.jsf.common.ui [497]
+         Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+              org.eclipse.draw2d [1029]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.pagedesigner; bundle-version="[1.1.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.pagedesigner; bundle-version="1.8.4.v202007170344"; singleton:="true"
+       org.eclipse.jst.pagedesigner [509]
+         Unresolved requirement: Require-Bundle: org.eclipse.gef; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.gef; bundle-version="3.16.0.202311222042"; singleton:="true"
+              org.eclipse.gef [1065]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+                Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.13.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.gef; bundle-version="[3.2.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.gef; bundle-version="3.16.0.202311222042"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.jsf.common.ui 4 0 2024-09-09 12:03:15.283
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.jsf.common.ui [497]
+  Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.2.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+       org.eclipse.draw2d [1029]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.jsf.facelet.ui 4 0 2024-09-09 12:03:15.289
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.jsf.facelet.ui [501]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.ui; bundle-version="1.0.1"
+    -> Bundle-SymbolicName: org.eclipse.jst.jsf.ui; bundle-version="1.6.103.v202003241443"; singleton:="true"
+       org.eclipse.jst.jsf.ui [505]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.common.ui; bundle-version="[1.0.1,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.jsf.common.ui; bundle-version="1.5.102.v202007170344"; singleton:="true"
+              org.eclipse.jst.jsf.common.ui [497]
+                Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.2.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+                     org.eclipse.draw2d [1029]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.jsf.facesconfig.ui 4 0 2024-09-09 12:03:15.295
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.jsf.facesconfig.ui [503]
+  Unresolved requirement: Require-Bundle: org.eclipse.gef; bundle-version="[3.2.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.gef; bundle-version="3.16.0.202311222042"; singleton:="true"
+       org.eclipse.gef [1065]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+         Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.13.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+              org.eclipse.draw2d [1029]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.common.ui; bundle-version="[1.0.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.jsf.common.ui; bundle-version="1.5.102.v202007170344"; singleton:="true"
+       org.eclipse.jst.jsf.common.ui [497]
+         Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.jsf.ui 4 0 2024-09-09 12:03:15.300
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.jsf.ui [505]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.common.ui; bundle-version="[1.0.1,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.jsf.common.ui; bundle-version="1.5.102.v202007170344"; singleton:="true"
+       org.eclipse.jst.jsf.common.ui [497]
+         Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+              org.eclipse.draw2d [1029]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.pagedesigner 4 0 2024-09-09 12:03:15.305
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.pagedesigner [509]
+  Unresolved requirement: Require-Bundle: org.eclipse.gef; bundle-version="[3.2.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.gef; bundle-version="3.16.0.202311222042"; singleton:="true"
+       org.eclipse.gef [1065]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+         Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.13.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+              org.eclipse.draw2d [1029]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.common.ui; bundle-version="[1.0.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.jsf.common.ui; bundle-version="1.5.102.v202007170344"; singleton:="true"
+       org.eclipse.jst.jsf.common.ui [497]
+         Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.pagedesigner.jsf.ui 4 0 2024-09-09 12:03:15.311
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.pagedesigner.jsf.ui [510]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.pagedesigner; bundle-version="[1.1.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.pagedesigner; bundle-version="1.8.4.v202007170344"; singleton:="true"
+       org.eclipse.jst.pagedesigner [509]
+         Unresolved requirement: Require-Bundle: org.eclipse.gef; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.gef; bundle-version="3.16.0.202311222042"; singleton:="true"
+              org.eclipse.gef [1065]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+                Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.13.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+                     org.eclipse.draw2d [1029]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.common.ui; bundle-version="[1.0.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.jsf.common.ui; bundle-version="1.5.102.v202007170344"; singleton:="true"
+              org.eclipse.jst.jsf.common.ui [497]
+                Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.2.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.common.ui; bundle-version="[1.1.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.jsf.common.ui; bundle-version="1.5.102.v202007170344"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.wst.common.snippets 4 0 2024-09-09 12:03:15.459
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.common.snippets [804]
+  Unresolved requirement: Require-Bundle: org.eclipse.gef; bundle-version="[3.10.0,6.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.gef; bundle-version="3.16.0.202311222042"; singleton:="true"
+       org.eclipse.gef [1065]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+         Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.13.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+              org.eclipse.draw2d [1029]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.wst.wsdl.ui 4 0 2024-09-09 12:03:15.464
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.wsdl.ui [849]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.xsd.ui; bundle-version="[1.3.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.wst.xsd.ui; bundle-version="1.3.400.v202008091424"; singleton:="true"
+       org.eclipse.wst.xsd.ui [866]
+         Unresolved requirement: Require-Bundle: org.eclipse.gef; bundle-version="[3.11.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.gef; bundle-version="3.16.0.202311222042"; singleton:="true"
+              org.eclipse.gef [1065]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+                Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.13.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+                     org.eclipse.draw2d [1029]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+  Unresolved requirement: Require-Bundle: org.eclipse.gef; bundle-version="[3.2.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.gef; bundle-version="3.16.0.202311222042"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.wst.xsd.ui 4 0 2024-09-09 12:03:15.470
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.xsd.ui [866]
+  Unresolved requirement: Require-Bundle: org.eclipse.gef; bundle-version="[3.11.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.gef; bundle-version="3.16.0.202311222042"; singleton:="true"
+       org.eclipse.gef [1065]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+         Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.13.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+              org.eclipse.draw2d [1029]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.jboss.tools.common.text.xml 4 0 2024-09-09 12:03:15.513
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.text.xml [1004]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.xsd.ui; bundle-version="1.2.404"
+    -> Bundle-SymbolicName: org.eclipse.wst.xsd.ui; bundle-version="1.3.400.v202008091424"; singleton:="true"
+       org.eclipse.wst.xsd.ui [866]
+         Unresolved requirement: Require-Bundle: org.eclipse.gef; bundle-version="[3.11.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.gef; bundle-version="3.16.0.202311222042"; singleton:="true"
+              org.eclipse.gef [1065]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+                Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.13.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+                     org.eclipse.draw2d [1029]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.jboss.tools.common.ui 4 0 2024-09-09 12:03:15.517
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.ui [1005]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common.text.xml
+    -> Bundle-SymbolicName: org.jboss.tools.common.text.xml; bundle-version="3.17.0.v20210819-1425"; singleton:="true"
+       org.jboss.tools.common.text.xml [1004]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.xsd.ui; bundle-version="1.2.404"
+           -> Bundle-SymbolicName: org.eclipse.wst.xsd.ui; bundle-version="1.3.400.v202008091424"; singleton:="true"
+              org.eclipse.wst.xsd.ui [866]
+                Unresolved requirement: Require-Bundle: org.eclipse.gef; bundle-version="[3.11.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.gef; bundle-version="3.16.0.202311222042"; singleton:="true"
+                     org.eclipse.gef [1065]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.13.0,4.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+                            org.eclipse.draw2d [1029]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.jboss.tools.quarkus.cheatsheet 4 0 2024-09-09 12:03:15.532
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.quarkus.cheatsheet [1010]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.quarkus.ui
+    -> Bundle-SymbolicName: org.jboss.tools.quarkus.ui; bundle-version="1.4.0.v20210603-1559"; singleton:="true"
+       org.jboss.tools.quarkus.ui [1014]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.ui
+           -> Bundle-SymbolicName: org.jboss.tools.common.ui; bundle-version="3.17.0.v20210819-1425"; singleton:="true"
+              org.jboss.tools.common.ui [1005]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.common.text.xml
+                  -> Bundle-SymbolicName: org.jboss.tools.common.text.xml; bundle-version="3.17.0.v20210819-1425"; singleton:="true"
+                     org.jboss.tools.common.text.xml [1004]
+                       Unresolved requirement: Require-Bundle: org.eclipse.wst.xsd.ui; bundle-version="1.2.404"
+                         -> Bundle-SymbolicName: org.eclipse.wst.xsd.ui; bundle-version="1.3.400.v202008091424"; singleton:="true"
+                            org.eclipse.wst.xsd.ui [866]
+                              Unresolved requirement: Require-Bundle: org.eclipse.gef; bundle-version="[3.11.0,4.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.gef; bundle-version="3.16.0.202311222042"; singleton:="true"
+                                   org.eclipse.gef [1065]
+                                     Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+                                     Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.13.0,4.0.0)"; visibility:="reexport"
+                                       -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+                                          org.eclipse.draw2d [1029]
+                                            Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common.ui
+    -> Bundle-SymbolicName: org.jboss.tools.common.ui; bundle-version="3.17.0.v20210819-1425"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.jboss.tools.quarkus.ui 4 0 2024-09-09 12:03:15.537
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.quarkus.ui [1014]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common.ui
+    -> Bundle-SymbolicName: org.jboss.tools.common.ui; bundle-version="3.17.0.v20210819-1425"; singleton:="true"
+       org.jboss.tools.common.ui [1005]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.text.xml
+           -> Bundle-SymbolicName: org.jboss.tools.common.text.xml; bundle-version="3.17.0.v20210819-1425"; singleton:="true"
+              org.jboss.tools.common.text.xml [1004]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.xsd.ui; bundle-version="1.2.404"
+                  -> Bundle-SymbolicName: org.eclipse.wst.xsd.ui; bundle-version="1.3.400.v202008091424"; singleton:="true"
+                     org.eclipse.wst.xsd.ui [866]
+                       Unresolved requirement: Require-Bundle: org.eclipse.gef; bundle-version="[3.11.0,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.gef; bundle-version="3.16.0.202311222042"; singleton:="true"
+                            org.eclipse.gef [1065]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+                              Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.13.0,4.0.0)"; visibility:="reexport"
+                                -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+                                   org.eclipse.draw2d [1029]
+                                     Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.draw2d 4 0 2024-09-09 12:03:15.541
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.draw2d [1029]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.gef 4 0 2024-09-09 12:03:15.545
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.gef [1065]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+  Unresolved requirement: Require-Bundle: org.eclipse.draw2d; bundle-version="[3.13.0,4.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.draw2d; bundle-version="3.14.100.202311222042"; singleton:="true"
+       org.eclipse.draw2d [1029]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=17))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jface 2 0 2024-09-09 12:03:54.606
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-09-09 12:03:54.606
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6c2d124e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@602e7a9e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
