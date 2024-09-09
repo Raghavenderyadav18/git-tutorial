@@ -1,3 +1,2 @@
 sample 2 is added 
-sample master
-sample added
+
